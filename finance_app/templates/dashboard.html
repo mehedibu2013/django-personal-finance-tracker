@@ -1,0 +1,32 @@
+<!-- finance_app/templates/dashboard.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Your Finance Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Your Finance Dashboard</h1>
+
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}</p>
+        <!-- Logout Form -->
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    {% else %}
+        <p>You are not logged in.</p>
+        <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+
+    <h2>Recent Transactions:</h2>
+    <ul>
+        {% for transaction in transactions %}
+            <li>{{ transaction.date }} - {{ transaction.type|title }} of ${{ transaction.amount }} ({{ transaction.category }})</li>
+        {% empty %}
+            <li>No recent transactions.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ user.username }}</h1>
+        <p>Email: {{ user.email }}</p>
+        <!-- Add more user details as needed -->
+        <a href="{% url 'dashboard' %}">Go to Dashboard</a>
+    </div>
+</body>
+</html>

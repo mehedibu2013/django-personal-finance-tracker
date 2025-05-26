@@ -1,0 +1,17 @@
+<!-- finance_app/templates/category_form.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block page_title %}Category Form{% endblock %}</title>
+</head>
+<body>
+    <h1>{% block page_heading %}Add Category{% endblock %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'category_list' %}">Cancel</a>
+</body>
+</html>
