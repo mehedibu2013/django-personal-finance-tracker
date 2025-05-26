@@ -174,3 +174,7 @@ If you don’t already have a `requirements.txt`, generate it with:
 ```bash
 pip freeze > requirements.txt
 ```
+## 📦 Future enhancements
+Styling : Add CSS to improve the UI.
+Advanced Features : Implement charts, budget tracking, or category management.
+Security : Add additional protections like rate limiting or password strength checks.
