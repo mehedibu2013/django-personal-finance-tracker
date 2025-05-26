@@ -19,21 +19,21 @@ Keep track of income, expenses, categories, and budgets — all from one dashboa
 
 ## 🧾 URLs Available
 
-| Feature | URL |
-|--------|-----|
-| Login | http://127.0.0.1:8000/accounts/login/ |
-| Logout | http://127.0.0.1:8000/accounts/logout/ |
-| Dashboard | http://127.0.0.1:8000/ |
-| All Transactions | http://127.0.0.1:8000/transactions/ |
-| Add Transaction | http://127.0.0.1:8000/transactions/add/ |
-| Edit Transaction | http://127.0.0.1:8000/transactions/<id>/edit/ |
-| Delete Transaction | http://127.0.0.1:8000/transactions/<id>/delete/ |
-| All Categories | http://127.0.0.1:8000/categories/ |
-| Add Category | http://127.0.0.1:8000/categories/add/ |
-| Edit Category | http://127.0.0.1:8000/categories/<id>/edit/ |
-| Delete Category | http://127.0.0.1:8000/categories/<id>/delete/ |
+| Feature | URL                                            |
+|--------|------------------------------------------------|
+| Login | http://127.0.0.1:8000/accounts/login/          |
+| Logout | http://127.0.0.1:8000/accounts/logout/         |
+| Dashboard | http://127.0.0.1:8000/                         |
+| All Transactions | http://127.0.0.1:8000/transactions/            |
+| Add Transaction | http://127.0.0.1:8000/transactions/add/        |
+| Edit Transaction | http://127.0.0.1:8000/transactions/1/edit/     |      <!-- Example ID: 1 -->
+| Delete Transaction | http://127.0.0.1:8000/transactions/1/delete/   |    <!-- Example ID: 1 -->  
+| All Categories | http://127.0.0.1:8000/categories/              |
+| Add Category | http://127.0.0.1:8000/categories/add/          |
+| Edit Category | http://127.0.0.1:8000/categories/1/edit/       |         <!-- Example ID: 1 --> 
+| Delete Category | http://127.0.0.1:8000/categories/1/delete/     |       <!-- Example ID: 1 -->
 | Password Reset | http://127.0.0.1:8000/accounts/password_reset/ |
-| Admin Panel | http://127.0.0.1:8000/admin/ |
+| Admin Panel | http://127.0.0.1:8000/admin/                   |
 
 ---
 
